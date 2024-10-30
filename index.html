@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 ASSIGNMENTS</title>
+</head>
+<style>
+    /* Background and font styling */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* Main container for links */
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Styling for links */
+    a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 5px 0;
+        background: #f0f0f0;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    a:hover {
+        background: #ffe0e6;
+        color: #000;
+    }
+
+    /* Footer styling */
+    footer {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+        color: #555;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>MINI--Projects</h1>
+        <a href="./BMI Calculator/index.html" target="_self">ASSIGNMENT 1</a>
+    </div>
+
+    <footer>
+        &copy; @All Rights Reserved by AdityaRajNayak
+    </footer>
+    <script>
+        // Function to generate a random hex color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Apply the random color to the background on ASSIGNMENT load
+        window.onload = function() {
+            const randomColor1 = getRandomColor();
+            const randomColor2 = getRandomColor();
+            document.body.style.background = `linear-gradient(135deg, ${randomColor1}, ${randomColor2})`;
+        };
+    </script>
+</body>
+</html>
